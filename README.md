@@ -6,23 +6,7 @@
   [![Blog](https://img.shields.io/badge/Blog-blog.atakangul.com-orange?style=flat-square&logo=rss)](https://blog.atakangul.com)
 </div>
 
-Computer engineering student exploring cloud infrastructure and automation. Documenting my learning journey through technical blog posts at [blog.atakangul.com](https://blog.atakangul.com).
-
----
-
-
-### My Thoughts:
-
-▪️ [**Kubernetes Control Plane and Data Plane Explained**](https://atakangul.com/blogs/kubernetes-control-data-plane)  
-   _Key Components & Automation_
-
-▪️ [**Go (Golang): The Ultimate Fast-Compiling Language**](https://atakangul.com/blogs/go-golang-fast-compilation)  
-   _Modern Software Development_
-
-▪️ [**Mesh Networks Explained**](https://atakangul.com/blogs/mesh-networks-boost-connectivity-reliability)  
-   _Boosting Connectivity, Coverage, and Reliability_
-
----
+Engineer exploring cloud infrastructure and automation. Documenting my learning journey through technical blog posts at [blog.atakangul.com](https://blog.atakangul.com).
 
 | | |
 |---------------------------|-------------------|
