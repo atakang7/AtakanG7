@@ -1,12 +1,12 @@
 <div align="center">
   <h1>Atakan Gül</h1>
-  <p><em>Software Developer • Automation</em></p>
+  <p><em>Cloud Platform Engineer • Agentic Developer</em></p>
 
   [![Website](https://img.shields.io/badge/Website-atakangul.com-blue?style=flat-square&logo=google-chrome)](https://www.atakangul.com)
   [![Blog](https://img.shields.io/badge/Blog-atakangul.com/blogs-orange?style=flat-square&logo=rss)](https://atakangul.com/blogs)
 </div>
 
-Engineer exploring cloud infrastructure and automation. Documenting my learning journey through technical blog posts at [atakangul.com/blogs](https://atakangul.com/blogs).
+Cloud platform engineer building agentic systems on solid infrastructure. Documenting my work through technical blog posts at [atakangul.com/blogs](https://atakangul.com/blogs).
 
 | | |
 |---------------------------|-------------------|
