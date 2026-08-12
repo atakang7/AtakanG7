@@ -10,10 +10,9 @@ Engineer exploring cloud infrastructure and automation. Documenting my learning 
 
 | | |
 |---------------------------|-------------------|
-| **KubernetesInfra** [🔗](https://kubernetes-infra.atakangul.com/) `LIVE`<br>Enterprise-grade infrastructure, enables light fast infra deployments.<br>`Kubernetes` `Terraform` `Helm` | **Azure DevOps Pipeline** [📝](https://atakangul.com/blogs/bypassing-azure-parallelism-self-hosted-agent) [💻](https://github.com/AtakanG7/azure-devops-ci-cd)<br>Zero-downtime deployment system with Jira integration<br>`Azure` `DevOps` `Blue-Green` `CI/CD` |
-| **Diagnostic Agent** [💻](https://github.com/AtakanG7/linux-diagnostic-agent) `BETA`<br>Distributed system metrics collection for Linux.<br>`Go` `System Metrics` `Monitoring` | **logWatcher** [📝](https://atakangul.com/blogs/logwatcher)<br>Visualizes docker image metrics on runtime.<br>`Python` `Grafana` `Prometheus` `Docker` |
 | **axon** [🔗](https://atakang7.github.io/axon/) [💻](https://github.com/AtakanG7/axon)<br>Go runtime for tool-using LLM agents — turns, tools, sessions, context pressure, MCP.<br>`Go` `LLM` `Agents` `MCP` | **cortex** [🔗](https://atakang7.github.io/cortex/) [💻](https://github.com/AtakanG7/cortex)<br>Terminal coding agent built on axon — streaming chat, append-only sessions, context pruning.<br>`Go` `LLM` `CLI` `Agents` |
-| **satiScraper** [🔗](https://satiscraper.onrender.com/) `LIVE`<br>E-commerce sentiment analysis and research<br>`Python` `ML` `BeautifulSoup` `Analytics` | |
+| **KubernetesInfra** [🔗](https://kubernetes-infra.atakangul.com/) `LIVE`<br>Enterprise-grade infrastructure, enables light fast infra deployments.<br>`Kubernetes` `Terraform` `Helm` | **Diagnostic Agent** [💻](https://github.com/AtakanG7/linux-diagnostic-agent) `BETA`<br>Distributed system metrics collection for Linux.<br>`Go` `System Metrics` `Monitoring` |
+| **logWatcher** [📝](https://atakangul.com/blogs/logwatcher)<br>Visualizes docker image metrics on runtime.<br>`Python` `Grafana` `Prometheus` `Docker` | |
 
 `🔗 Live Demo Available` `📝 Blog Post` `💻 GitHub Repository`
 
