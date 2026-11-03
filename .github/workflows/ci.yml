@@ -1,0 +1,23 @@
+name: Check blog updater
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Check shell syntax
+        run: |
+          for script in scripts/*.sh tests/*.sh; do
+            bash -n "$script"
+          done
+      - name: Test blog updater
+        run: bash tests/update-blog-posts.sh
