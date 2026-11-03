@@ -2,6 +2,23 @@
 
 Cloud infrastructure projects and notes from my work on deployments and Linux systems.
 
+```text
++--------------------------+  HTTPS JSON  +----------------------+
+| atakangul.com/posts.json | -----------> | update-blog-posts.sh |
++--------------------------+              +----------------------+
+                                                  |
+                                                writes
+                                                  v
+                                            +-----------+
+                                            | README.md |
+                                            +-----------+
+```
+
+```text
++--------------+  triggers  +--------+  runs  +----------------------------+
+| pull_request | ---------> | ci.yml | -----> | tests/update-blog-posts.sh |
++--------------+            +--------+        +----------------------------+
+```
 ## Run
 
 Requires Bash, curl, jq and awk.
