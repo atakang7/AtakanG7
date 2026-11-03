@@ -12,7 +12,7 @@ The part I enjoy most is building platforms that take operational work off other
 
 ## Measured work
 
-| | |
+| Result | How |
 |---|---|
 | **20 TB** | AWS migration with zero downtime. Every object ETag-checked, not sampled. |
 | **3h → 7m** | Glue ETL rebuilt on incremental watermarks. ~$6K a year saved, no bigger cluster. |
