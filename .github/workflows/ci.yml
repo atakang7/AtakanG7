@@ -23,3 +23,13 @@ jobs:
             /<!-- BLOG-POST-LIST:END -->/ { end=NR }
             END { exit !(start && end && start < end) }
           ' README.md
+      - name: Check relative links
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          for target in re.findall(r'\]\(([^)]+)\)', Path('README.md').read_text()):
+              if '://' not in target and not Path(target.split('#', 1)[0]).exists():
+                  raise SystemExit(f'Broken link: {target}')
+          PY
