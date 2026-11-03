@@ -1,0 +1,46 @@
+name: Update blog posts in README
+
+on:
+  schedule:
+    - cron: "17 8 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch most-viewed posts
+        run: |
+          set -euo pipefail
+          if ! curl -fsS --max-time 20 'https://atakangul.com/blogs/most-viewed' -o posts.json; then
+            echo "Blog API unreachable; keeping current list."; exit 0
+          fi
+          jq -r 'if type == "array" then .[0:3][] | select(.title and .url)
+                 | "- [\(.title)](https://atakangul.com/blogs/\(.url))" else empty end' \
+             posts.json > posts.md || true
+          if [ ! -s posts.md ]; then
+            echo "No valid posts returned; keeping current list."; exit 0
+          fi
+
+      - name: Insert posts between markers
+        run: |
+          [ -s posts.md ] || exit 0
+          awk '
+            /<!-- BLOG-POST-LIST:START -->/ { print; system("cat posts.md"); skip=1; next }
+            /<!-- BLOG-POST-LIST:END -->/   { skip=0 }
+            !skip
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh latest blog posts"
+          git push

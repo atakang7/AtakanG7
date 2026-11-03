@@ -1,26 +1,48 @@
-<div align="center">
-  <h1>Atakan Gül</h1>
-  <p><em>Cloud Platform Engineer • Agentic Developer</em></p>
+# Atakan Gül
 
-  [![Website](https://img.shields.io/badge/Website-atakangul.com-blue?style=flat-square&logo=google-chrome)](https://www.atakangul.com)
-  [![Blog](https://img.shields.io/badge/Blog-atakangul.com/blogs-orange?style=flat-square&logo=rss)](https://atakangul.com/blogs)
-</div>
+**Cloud & Platform Engineer** · AWS · Kubernetes · Terraform · CI/CD · Observability
 
-Cloud platform engineer building agentic systems on solid infrastructure. Documenting my work through technical blog posts at [atakangul.com/blogs](https://atakangul.com/blogs).
+[![Website](https://img.shields.io/badge/Website-atakangul.com-blue?style=flat-square&logo=google-chrome)](https://www.atakangul.com)
+[![Blog](https://img.shields.io/badge/Blog-atakangul.com/blogs-orange?style=flat-square&logo=rss)](https://atakangul.com/blogs)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-atakan--gul-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/atakan-gul)
 
-| | |
-|---------------------------|-------------------|
-| **axon** [🔗](https://atakang7.github.io/axon/) [💻](https://github.com/AtakanG7/axon)<br>Go runtime for tool-using LLM agents — turns, tools, sessions, context pressure, MCP.<br>`Go` `LLM` `Agents` `MCP` | **cortex** [🔗](https://atakang7.github.io/cortex/) [💻](https://github.com/AtakanG7/cortex)<br>Terminal coding agent built on axon — streaming chat, append-only sessions, context pruning.<br>`Go` `LLM` `CLI` `Agents` |
-| **KubernetesInfra** [🔗](https://kubernetes-infra.atakangul.com/) `LIVE`<br>Enterprise-grade infrastructure, enables light fast infra deployments.<br>`Kubernetes` `Terraform` `Helm` | **Diagnostic Agent** [💻](https://github.com/AtakanG7/linux-diagnostic-agent) `BETA`<br>Distributed system metrics collection for Linux.<br>`Go` `System Metrics` `Monitoring` |
+I build and run cloud infrastructure that stays up: zero-downtime migrations, fast pipelines, and the observability to know when something breaks. On the side, I build AI agent tooling in Go.
 
-`🔗 Live Demo Available` `📝 Blog Post` `💻 GitHub Repository`
+## Production highlights (Siemens)
 
----
+- **Zero-downtime migration of 20TB+ on AWS** with DataSync and automated ETag validation for data consistency
+- **AWS Glue ETL runtime cut from 3 hours to 7 minutes** with watermark-based processing, saving ~$6K/year
+- **Shift-left security:** Wiz scanning in CI/CD for container images and Infrastructure-as-Code
+- **Centralized logging with Loki** for faster troubleshooting across distributed environments
+- **40% lower memory usage** in Python analytics pipelines after profiling and fixing OOM failures
 
-<div align="center">
-  <sub>⚡ "Building systems with scalability in mind" </sub>
-</div>
+## Infrastructure projects
 
-<div align="center">
-  <sub>⚡ "Understanding systems, one layer at a time"</sub>
-</div>
+| Project | What it is | Stack |
+|---|---|---|
+| **KubernetesInfra** · [live](https://kubernetes-infra.atakangul.com/) | Kubernetes infrastructure provisioned with Terraform and deployed with Helm | `Kubernetes` `Terraform` `Helm` |
+| [**linux-diagnostic-agent**](https://github.com/atakang7/linux-diagnostic-agent) | Agent that collects logs and network metrics from Linux hosts | `Go` `Linux` `Monitoring` |
+| [**linux-diagnostic-client**](https://github.com/atakang7/linux-diagnostic-client) | Client side for the diagnostic agent's metrics | `Go` |
+
+## Agents & developer tooling
+
+| Project | What it is | Stack |
+|---|---|---|
+| [**axon**](https://github.com/atakang7/axon) · [docs](https://atakang7.github.io/axon/) | Minimal Go runtime for tool-using LLM agents: turns, tools, sessions, context pressure, MCP | `Go` `LLM` `MCP` |
+| [**cortex**](https://github.com/atakang7/cortex) · [docs](https://atakang7.github.io/cortex/) | Token-efficient terminal coding agent built on axon | `Go` `CLI` |
+| [**standard-ui**](https://github.com/atakang7/standard-ui) | Provider-agnostic chat UI for OpenAI-compatible APIs, Anthropic, Ollama and custom gateways | `TypeScript` |
+
+## Stack
+
+- **Cloud:** AWS (DataSync, Glue, Athena, Bedrock) · Azure (App Service)
+- **Platform:** Kubernetes · Helm · Terraform · Docker · Jenkins
+- **Observability & security:** Loki · Wiz · Trivy
+- **Languages:** Go · Python · Bash
+- **Certification:** AWS Certified Solutions Architect – Associate
+
+## Latest writing
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+More at [atakangul.com/blogs](https://atakangul.com/blogs).
