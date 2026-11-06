@@ -1,6 +1,6 @@
 # atakan gül
 
-I don't stop until the tests pass and the service holds.
+I do more with less.
 
 - [k8s-platform-lab](https://github.com/atakang7/k8s-platform-lab) — Kubernetes platform, from VMs to canary
 - [cross-vpc-private-link](https://github.com/atakang7/cross-vpc-private-link) — PrivateLink across two AWS accounts
